@@ -37,6 +37,20 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    flavorDimensions "env"
+    productFlavors {
+        live {
+            dimension "env"
+            applicationId "com.tes.ahmadabuhasan"
+            versionName "1.0.0"
+        }
+        dev {
+            dimension "env"
+            applicationId "com.tes.ahmadabuhasan.dev"
+            versionName "1.0.0"
+        }
+    }
 }
 
 flutter {
