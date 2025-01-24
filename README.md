@@ -14,3 +14,12 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+### run or build
+```
+flutter run --flavor dev --dart-define=FLAVOR=dev
+flutter run --flavor live --dart-define=FLAVOR=live
+
+flutter build apk --flavor dev --dart-define=FLAVOR=dev --release
+flutter build apk --flavor live --dart-define=FLAVOR=live --release
+```
